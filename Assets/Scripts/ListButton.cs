@@ -17,16 +17,29 @@ public class ListButton : MonoBehaviour {
         //get url from name
 
         SaveDataManager.Instance.previewImageName = name;
-        loadScene();
+        loadScenePreview();
     }
 
-    
 
-     void loadScene()
+    public void buttonClickedSelect()
+    {
+        name = nameLabel.text;
+        //get url from name
+
+        SaveDataManager.Instance.previewImageName = name;
+        loadSceneSelect();
+    }
+
+
+    private void loadScenePreview()
     {
         SceneManager.LoadScene("Preview_Screen");
     }
 
+    private void loadSceneSelect()
+    {
+        SceneManager.LoadScene("FootballField_Screen");
+    }
 
 }
 

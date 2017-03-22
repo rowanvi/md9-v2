@@ -5,17 +5,15 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 0
-    path: Assets/Scenes/Vuforia_Test.unity
   - enabled: 1
     path: Assets/Scenes/Main_Menu.unity
   - enabled: 1
     path: Assets/Scenes/Scan_Screen.unity
-  - enabled: 0
-    path: Assets/Scenes/Aplha.unity
   - enabled: 1
     path: Assets/Scenes/Preview_Screen.unity
-  - enabled: 0
-    path: Assets/Scenes/List_Save_Screen.unity
   - enabled: 1
-    path: Assets/Scenes/test_for_list.unity
+    path: Assets/Scenes/Rowan_Test_Scene.unity
+  - enabled: 1
+    path: Assets/Scenes/View_List.unity
+  - enabled: 1
+    path: Assets/Scenes/FootballField_Screen.unity
