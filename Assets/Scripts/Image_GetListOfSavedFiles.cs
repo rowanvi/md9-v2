@@ -10,6 +10,7 @@ public class Image_GetListOfSavedFiles : MonoBehaviour
     //Initialization of variables
     public GameObject ListItemPrefab;
     public GameObject ContentPanel;
+    public RectTransform viewport;
     private WWW www;
 
     void Start()
@@ -38,16 +39,22 @@ public class Image_GetListOfSavedFiles : MonoBehaviour
             controller.nameLabel.text = data.loadList[i].coloringPictureName;
             StartCoroutine(test(SaveDataManager.Instance.GetTextureLoadUrlFromName(controller.nameLabel.text)));
             controller.iconImage.texture = www.texture;
-
+            
             newSaveLoad.transform.parent = ContentPanel.transform;
-            newSaveLoad.transform.localScale = Vector3.up;
-         
+            newSaveLoad.transform.localScale = Vector3.one;
+
+           
+            
+
+        
+            
+
 
 
 
         }
 
-        
+
 
 
     }
